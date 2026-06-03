@@ -1,0 +1,29 @@
+.DS_Store
+.stfolder/
+.stignore
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+
+data/**
+!data/
+!data/README.md
+
+logs/
+runs/
+outputs/
+
+# Keep generated result payloads out of git by default, but include the
+# bundled full detection outputs used as release reference data.
+results/**
+!results/
+!results/detection/
+!results/detection/**
+wandb/
+
+*.bin
+*.ckpt
+*.pt
+*.safetensors

@@ -1,0 +1,1865 @@
+{
+  "args": {
+    "created_at_utc": "2026-06-02T21:23:11.036164+00:00",
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_slug": "qwen3_vl_8b_instruct",
+    "source_experiment": "experiments/active/detection",
+    "source_detection": "null-query calibrated active detection",
+    "source_context": "16K",
+    "tasks": [
+      "mm_image_mc",
+      "mm_image_yn",
+      "mm_text",
+      "text_needle_image"
+    ],
+    "task_labels": {
+      "mm_image_mc": "MM-NIAH image multiple choice",
+      "mm_image_yn": "MM-NIAH image yes/no",
+      "mm_text": "MM-NIAH text",
+      "text_needle_image": "MM-NIAH text needle with image haystack"
+    },
+    "per_task_top_percent": 5,
+    "total_model_heads": 1152,
+    "per_task_top_k": 58,
+    "union_top_k": 104,
+    "score_for_union": "max null-calibrated head score across source tasks",
+    "source_files": {
+      "mm_image_mc": "results/detection/Qwen3-VL-8B-Instruct/mm_niah_retrieval-image_retrieval-image_test_K16_dep6_in16384_size20_sampFalse_addnullTrue_42.json",
+      "mm_image_yn": "results/detection/Qwen3-VL-8B-Instruct/identical_retrieval-image_retrieval-image_test_K16_dep6_in16384_size20_sampFalse_addnullTrue_42.json",
+      "mm_text": "results/detection/Qwen3-VL-8B-Instruct/mm_niah_retrieval-text_retrieval-text_test_K16_dep6_in16384_size20_sampFalse_addnullTrue_42.json",
+      "text_needle_image": "results/detection/Qwen3-VL-8B-Instruct/text_needle_image_retrieval-text_test_K16_dep6_in16384_size20_sampFalse_addnullTrue_42.json"
+    },
+    "source_head_counts": {
+      "mm_image_mc": 1152,
+      "mm_image_yn": 1152,
+      "mm_text": 1152,
+      "text_needle_image": 1152
+    },
+    "source_task_metadata": {
+      "mm_image_mc": {
+        "label": "MM-NIAH image multiple choice",
+        "dataset": "mm_niah_retrieval-image",
+        "test_files": "NIAH/retrieval-image_test_K16_dep6.jsonl",
+        "max_test_samples": 20,
+        "input_max_length": 16384,
+        "add_null_score": true
+      },
+      "mm_image_yn": {
+        "label": "MM-NIAH image yes/no",
+        "dataset": "identical_retrieval-image",
+        "test_files": "NIAH/retrieval-image_test_K16_dep6.jsonl",
+        "max_test_samples": 20,
+        "input_max_length": 16384,
+        "add_null_score": true
+      },
+      "mm_text": {
+        "label": "MM-NIAH text",
+        "dataset": "mm_niah_retrieval-text",
+        "test_files": "NIAH/retrieval-text_test_K16_dep6.jsonl",
+        "max_test_samples": 20,
+        "input_max_length": 16384,
+        "add_null_score": true
+      },
+      "text_needle_image": {
+        "label": "MM-NIAH text needle with image haystack",
+        "dataset": "text_needle_image",
+        "test_files": "NIAH/retrieval-text_test_K16_dep6.jsonl",
+        "max_test_samples": 20,
+        "input_max_length": 16384,
+        "add_null_score": true
+      }
+    },
+    "note": "Use this with --head-top-k equal to union_top_k for the full union, or a smaller top-k for retrieval sweeps.",
+    "source_results_root": "results/detection"
+  },
+  "head_score_list": [
+    [
+      "13-29",
+      0.70703125
+    ],
+    [
+      "15-11",
+      0.671875
+    ],
+    [
+      "21-10",
+      0.625
+    ],
+    [
+      "13-11",
+      0.6171875
+    ],
+    [
+      "15-9",
+      0.58203125
+    ],
+    [
+      "23-10",
+      0.55859375
+    ],
+    [
+      "21-11",
+      0.52734375
+    ],
+    [
+      "12-24",
+      0.515625
+    ],
+    [
+      "5-13",
+      0.5078125
+    ],
+    [
+      "24-5",
+      0.50390625
+    ],
+    [
+      "20-15",
+      0.498046875
+    ],
+    [
+      "24-23",
+      0.498046875
+    ],
+    [
+      "7-7",
+      0.48828125
+    ],
+    [
+      "13-13",
+      0.4765625
+    ],
+    [
+      "22-4",
+      0.46875
+    ],
+    [
+      "13-10",
+      0.46484375
+    ],
+    [
+      "18-23",
+      0.458984375
+    ],
+    [
+      "9-19",
+      0.45703125
+    ],
+    [
+      "18-15",
+      0.451171875
+    ],
+    [
+      "15-15",
+      0.447265625
+    ],
+    [
+      "17-4",
+      0.4453125
+    ],
+    [
+      "15-13",
+      0.4375
+    ],
+    [
+      "20-17",
+      0.427734375
+    ],
+    [
+      "19-24",
+      0.423828125
+    ],
+    [
+      "18-19",
+      0.419921875
+    ],
+    [
+      "23-30",
+      0.412109375
+    ],
+    [
+      "20-16",
+      0.40625
+    ],
+    [
+      "19-13",
+      0.404296875
+    ],
+    [
+      "17-27",
+      0.40234375
+    ],
+    [
+      "12-30",
+      0.40234375
+    ],
+    [
+      "22-23",
+      0.390625
+    ],
+    [
+      "17-25",
+      0.388671875
+    ],
+    [
+      "23-13",
+      0.38671875
+    ],
+    [
+      "20-21",
+      0.38671875
+    ],
+    [
+      "21-23",
+      0.380859375
+    ],
+    [
+      "20-23",
+      0.380859375
+    ],
+    [
+      "19-27",
+      0.37890625
+    ],
+    [
+      "21-18",
+      0.37890625
+    ],
+    [
+      "23-4",
+      0.37109375
+    ],
+    [
+      "9-18",
+      0.3671875
+    ],
+    [
+      "24-29",
+      0.3671875
+    ],
+    [
+      "34-28",
+      0.365234375
+    ],
+    [
+      "21-8",
+      0.361328125
+    ],
+    [
+      "20-14",
+      0.359375
+    ],
+    [
+      "21-22",
+      0.359375
+    ],
+    [
+      "15-8",
+      0.35546875
+    ],
+    [
+      "20-30",
+      0.35546875
+    ],
+    [
+      "17-17",
+      0.35546875
+    ],
+    [
+      "13-14",
+      0.35546875
+    ],
+    [
+      "17-21",
+      0.353515625
+    ],
+    [
+      "24-13",
+      0.34765625
+    ],
+    [
+      "16-23",
+      0.34375
+    ],
+    [
+      "21-26",
+      0.34375
+    ],
+    [
+      "11-9",
+      0.341796875
+    ],
+    [
+      "7-23",
+      0.333984375
+    ],
+    [
+      "28-2",
+      0.333984375
+    ],
+    [
+      "33-28",
+      0.33203125
+    ],
+    [
+      "24-22",
+      0.330078125
+    ],
+    [
+      "20-18",
+      0.328125
+    ],
+    [
+      "29-15",
+      0.326171875
+    ],
+    [
+      "29-12",
+      0.32421875
+    ],
+    [
+      "20-31",
+      0.322265625
+    ],
+    [
+      "14-12",
+      0.322265625
+    ],
+    [
+      "2-28",
+      0.3203125
+    ],
+    [
+      "28-0",
+      0.3203125
+    ],
+    [
+      "23-28",
+      0.318359375
+    ],
+    [
+      "18-5",
+      0.318359375
+    ],
+    [
+      "19-25",
+      0.3125
+    ],
+    [
+      "20-29",
+      0.3125
+    ],
+    [
+      "20-8",
+      0.310546875
+    ],
+    [
+      "21-31",
+      0.30859375
+    ],
+    [
+      "17-15",
+      0.302734375
+    ],
+    [
+      "26-18",
+      0.30078125
+    ],
+    [
+      "29-6",
+      0.298828125
+    ],
+    [
+      "19-14",
+      0.296875
+    ],
+    [
+      "19-12",
+      0.294921875
+    ],
+    [
+      "16-22",
+      0.29296875
+    ],
+    [
+      "17-16",
+      0.29296875
+    ],
+    [
+      "13-15",
+      0.279296875
+    ],
+    [
+      "9-29",
+      0.255859375
+    ],
+    [
+      "26-15",
+      0.255859375
+    ],
+    [
+      "9-10",
+      0.2421875
+    ],
+    [
+      "23-5",
+      0.2236328125
+    ],
+    [
+      "24-8",
+      0.2236328125
+    ],
+    [
+      "24-7",
+      0.1904296875
+    ],
+    [
+      "16-21",
+      0.181640625
+    ],
+    [
+      "27-18",
+      0.1767578125
+    ],
+    [
+      "7-22",
+      0.173828125
+    ],
+    [
+      "15-29",
+      0.039306640625
+    ],
+    [
+      "17-24",
+      0.038818359375
+    ],
+    [
+      "8-4",
+      0.0380859375
+    ],
+    [
+      "18-14",
+      0.0380859375
+    ],
+    [
+      "21-21",
+      0.034423828125
+    ],
+    [
+      "15-2",
+      0.033447265625
+    ],
+    [
+      "0-27",
+      0.03271484375
+    ],
+    [
+      "18-12",
+      0.032470703125
+    ],
+    [
+      "1-18",
+      0.031494140625
+    ],
+    [
+      "13-31",
+      0.03076171875
+    ],
+    [
+      "11-10",
+      0.0301513671875
+    ],
+    [
+      "13-28",
+      0.029541015625
+    ],
+    [
+      "23-11",
+      0.028564453125
+    ],
+    [
+      "8-26",
+      0.0277099609375
+    ],
+    [
+      "25-11",
+      0.02734375
+    ],
+    [
+      "9-16",
+      0.0267333984375
+    ]
+  ],
+  "union_metadata": {
+    "head_sources": {
+      "13-11": [
+        {
+          "task": "mm_image_mc",
+          "rank": 1,
+          "score": 0.130859375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 4,
+          "score": 0.6171875
+        },
+        {
+          "task": "mm_text",
+          "rank": 18,
+          "score": 0.296875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 20,
+          "score": 0.390625
+        }
+      ],
+      "15-11": [
+        {
+          "task": "mm_image_mc",
+          "rank": 2,
+          "score": 0.10498046875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 2,
+          "score": 0.671875
+        },
+        {
+          "task": "mm_text",
+          "rank": 2,
+          "score": 0.451171875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 3,
+          "score": 0.51171875
+        }
+      ],
+      "21-10": [
+        {
+          "task": "mm_image_mc",
+          "rank": 3,
+          "score": 0.0869140625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 3,
+          "score": 0.625
+        },
+        {
+          "task": "mm_text",
+          "rank": 4,
+          "score": 0.419921875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 4,
+          "score": 0.5078125
+        }
+      ],
+      "9-19": [
+        {
+          "task": "mm_image_mc",
+          "rank": 4,
+          "score": 0.0712890625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 17,
+          "score": 0.45703125
+        },
+        {
+          "task": "mm_text",
+          "rank": 39,
+          "score": 0.23046875
+        }
+      ],
+      "15-8": [
+        {
+          "task": "mm_image_mc",
+          "rank": 5,
+          "score": 0.06982421875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 35,
+          "score": 0.35546875
+        }
+      ],
+      "15-9": [
+        {
+          "task": "mm_image_mc",
+          "rank": 6,
+          "score": 0.068359375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 5,
+          "score": 0.58203125
+        },
+        {
+          "task": "mm_text",
+          "rank": 1,
+          "score": 0.458984375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 1,
+          "score": 0.53125
+        }
+      ],
+      "21-8": [
+        {
+          "task": "mm_image_mc",
+          "rank": 7,
+          "score": 0.0654296875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 32,
+          "score": 0.361328125
+        },
+        {
+          "task": "mm_text",
+          "rank": 16,
+          "score": 0.306640625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 45,
+          "score": 0.326171875
+        }
+      ],
+      "13-10": [
+        {
+          "task": "mm_image_mc",
+          "rank": 8,
+          "score": 0.06201171875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 15,
+          "score": 0.46484375
+        }
+      ],
+      "21-11": [
+        {
+          "task": "mm_image_mc",
+          "rank": 9,
+          "score": 0.06005859375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 7,
+          "score": 0.52734375
+        },
+        {
+          "task": "mm_text",
+          "rank": 15,
+          "score": 0.314453125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 14,
+          "score": 0.423828125
+        }
+      ],
+      "17-4": [
+        {
+          "task": "mm_image_mc",
+          "rank": 10,
+          "score": 0.056396484375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 18,
+          "score": 0.4453125
+        },
+        {
+          "task": "mm_text",
+          "rank": 37,
+          "score": 0.2333984375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 13,
+          "score": 0.435546875
+        }
+      ],
+      "18-23": [
+        {
+          "task": "mm_image_mc",
+          "rank": 11,
+          "score": 0.053955078125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 7,
+          "score": 0.458984375
+        }
+      ],
+      "17-25": [
+        {
+          "task": "mm_image_mc",
+          "rank": 12,
+          "score": 0.052734375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 51,
+          "score": 0.310546875
+        },
+        {
+          "task": "mm_text",
+          "rank": 48,
+          "score": 0.19140625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 21,
+          "score": 0.388671875
+        }
+      ],
+      "18-15": [
+        {
+          "task": "mm_image_mc",
+          "rank": 13,
+          "score": 0.05126953125
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 21,
+          "score": 0.412109375
+        },
+        {
+          "task": "mm_text",
+          "rank": 7,
+          "score": 0.37890625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 8,
+          "score": 0.451171875
+        }
+      ],
+      "23-10": [
+        {
+          "task": "mm_image_mc",
+          "rank": 14,
+          "score": 0.04931640625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 6,
+          "score": 0.55859375
+        },
+        {
+          "task": "mm_text",
+          "rank": 5,
+          "score": 0.41015625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 2,
+          "score": 0.5234375
+        }
+      ],
+      "9-18": [
+        {
+          "task": "mm_image_mc",
+          "rank": 15,
+          "score": 0.04833984375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 27,
+          "score": 0.3671875
+        }
+      ],
+      "12-24": [
+        {
+          "task": "mm_image_mc",
+          "rank": 16,
+          "score": 0.0478515625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 8,
+          "score": 0.515625
+        },
+        {
+          "task": "mm_text",
+          "rank": 25,
+          "score": 0.259765625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 43,
+          "score": 0.326171875
+        }
+      ],
+      "20-15": [
+        {
+          "task": "mm_image_mc",
+          "rank": 17,
+          "score": 0.045654296875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 11,
+          "score": 0.498046875
+        },
+        {
+          "task": "mm_text",
+          "rank": 3,
+          "score": 0.4375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 6,
+          "score": 0.48046875
+        }
+      ],
+      "5-13": [
+        {
+          "task": "mm_image_mc",
+          "rank": 18,
+          "score": 0.04541015625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 9,
+          "score": 0.5078125
+        }
+      ],
+      "18-19": [
+        {
+          "task": "mm_image_mc",
+          "rank": 19,
+          "score": 0.044921875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 23,
+          "score": 0.404296875
+        },
+        {
+          "task": "mm_text",
+          "rank": 19,
+          "score": 0.296875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 15,
+          "score": 0.419921875
+        }
+      ],
+      "19-24": [
+        {
+          "task": "mm_image_mc",
+          "rank": 20,
+          "score": 0.044677734375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 20,
+          "score": 0.423828125
+        },
+        {
+          "task": "mm_text",
+          "rank": 8,
+          "score": 0.37890625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 19,
+          "score": 0.3984375
+        }
+      ],
+      "24-5": [
+        {
+          "task": "mm_image_mc",
+          "rank": 21,
+          "score": 0.0419921875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 10,
+          "score": 0.50390625
+        },
+        {
+          "task": "mm_text",
+          "rank": 36,
+          "score": 0.2353515625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 11,
+          "score": 0.439453125
+        }
+      ],
+      "17-27": [
+        {
+          "task": "mm_image_mc",
+          "rank": 22,
+          "score": 0.041259765625
+        },
+        {
+          "task": "mm_text",
+          "rank": 31,
+          "score": 0.2470703125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 18,
+          "score": 0.40234375
+        }
+      ],
+      "19-13": [
+        {
+          "task": "mm_image_mc",
+          "rank": 23,
+          "score": 0.039794921875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 24,
+          "score": 0.404296875
+        },
+        {
+          "task": "mm_text",
+          "rank": 38,
+          "score": 0.2314453125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 29,
+          "score": 0.3671875
+        }
+      ],
+      "15-29": [
+        {
+          "task": "mm_image_mc",
+          "rank": 24,
+          "score": 0.039306640625
+        }
+      ],
+      "26-18": [
+        {
+          "task": "mm_image_mc",
+          "rank": 25,
+          "score": 0.039306640625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 54,
+          "score": 0.30078125
+        }
+      ],
+      "17-24": [
+        {
+          "task": "mm_image_mc",
+          "rank": 26,
+          "score": 0.038818359375
+        }
+      ],
+      "8-4": [
+        {
+          "task": "mm_image_mc",
+          "rank": 27,
+          "score": 0.0380859375
+        }
+      ],
+      "18-14": [
+        {
+          "task": "mm_image_mc",
+          "rank": 28,
+          "score": 0.0380859375
+        }
+      ],
+      "17-21": [
+        {
+          "task": "mm_image_mc",
+          "rank": 29,
+          "score": 0.037109375
+        },
+        {
+          "task": "mm_text",
+          "rank": 52,
+          "score": 0.1865234375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 33,
+          "score": 0.353515625
+        }
+      ],
+      "20-18": [
+        {
+          "task": "mm_image_mc",
+          "rank": 30,
+          "score": 0.037109375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 58,
+          "score": 0.29296875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 42,
+          "score": 0.328125
+        }
+      ],
+      "24-29": [
+        {
+          "task": "mm_image_mc",
+          "rank": 31,
+          "score": 0.036865234375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 29,
+          "score": 0.3671875
+        },
+        {
+          "task": "mm_text",
+          "rank": 40,
+          "score": 0.2265625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 40,
+          "score": 0.333984375
+        }
+      ],
+      "19-27": [
+        {
+          "task": "mm_image_mc",
+          "rank": 32,
+          "score": 0.0361328125
+        },
+        {
+          "task": "mm_text",
+          "rank": 29,
+          "score": 0.25
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 26,
+          "score": 0.37890625
+        }
+      ],
+      "24-13": [
+        {
+          "task": "mm_image_mc",
+          "rank": 33,
+          "score": 0.0361328125
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 48,
+          "score": 0.3203125
+        },
+        {
+          "task": "mm_text",
+          "rank": 46,
+          "score": 0.19921875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 34,
+          "score": 0.34765625
+        }
+      ],
+      "21-21": [
+        {
+          "task": "mm_image_mc",
+          "rank": 34,
+          "score": 0.034423828125
+        }
+      ],
+      "22-4": [
+        {
+          "task": "mm_image_mc",
+          "rank": 35,
+          "score": 0.034423828125
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 14,
+          "score": 0.46875
+        },
+        {
+          "task": "mm_text",
+          "rank": 30,
+          "score": 0.2490234375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 9,
+          "score": 0.44921875
+        }
+      ],
+      "13-29": [
+        {
+          "task": "mm_image_mc",
+          "rank": 36,
+          "score": 0.03369140625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 1,
+          "score": 0.70703125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 44,
+          "score": 0.326171875
+        }
+      ],
+      "21-18": [
+        {
+          "task": "mm_image_mc",
+          "rank": 37,
+          "score": 0.03369140625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 26,
+          "score": 0.37890625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 39,
+          "score": 0.333984375
+        }
+      ],
+      "15-2": [
+        {
+          "task": "mm_image_mc",
+          "rank": 38,
+          "score": 0.033447265625
+        }
+      ],
+      "23-13": [
+        {
+          "task": "mm_image_mc",
+          "rank": 39,
+          "score": 0.033203125
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 47,
+          "score": 0.3203125
+        },
+        {
+          "task": "mm_text",
+          "rank": 35,
+          "score": 0.23828125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 22,
+          "score": 0.38671875
+        }
+      ],
+      "29-15": [
+        {
+          "task": "mm_image_mc",
+          "rank": 40,
+          "score": 0.033203125
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 42,
+          "score": 0.326171875
+        }
+      ],
+      "23-30": [
+        {
+          "task": "mm_image_mc",
+          "rank": 41,
+          "score": 0.032958984375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 53,
+          "score": 0.306640625
+        },
+        {
+          "task": "mm_text",
+          "rank": 24,
+          "score": 0.26171875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 16,
+          "score": 0.412109375
+        }
+      ],
+      "0-27": [
+        {
+          "task": "mm_image_mc",
+          "rank": 42,
+          "score": 0.03271484375
+        }
+      ],
+      "18-12": [
+        {
+          "task": "mm_image_mc",
+          "rank": 43,
+          "score": 0.032470703125
+        }
+      ],
+      "24-23": [
+        {
+          "task": "mm_image_mc",
+          "rank": 44,
+          "score": 0.032470703125
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 16,
+          "score": 0.458984375
+        },
+        {
+          "task": "mm_text",
+          "rank": 12,
+          "score": 0.33203125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 5,
+          "score": 0.498046875
+        }
+      ],
+      "1-18": [
+        {
+          "task": "mm_image_mc",
+          "rank": 45,
+          "score": 0.031494140625
+        }
+      ],
+      "15-13": [
+        {
+          "task": "mm_image_mc",
+          "rank": 46,
+          "score": 0.03125
+        },
+        {
+          "task": "mm_text",
+          "rank": 17,
+          "score": 0.298828125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 12,
+          "score": 0.4375
+        }
+      ],
+      "20-30": [
+        {
+          "task": "mm_image_mc",
+          "rank": 47,
+          "score": 0.0308837890625
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 36,
+          "score": 0.35546875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 46,
+          "score": 0.32421875
+        }
+      ],
+      "13-31": [
+        {
+          "task": "mm_image_mc",
+          "rank": 48,
+          "score": 0.03076171875
+        }
+      ],
+      "11-10": [
+        {
+          "task": "mm_image_mc",
+          "rank": 49,
+          "score": 0.0301513671875
+        }
+      ],
+      "20-14": [
+        {
+          "task": "mm_image_mc",
+          "rank": 50,
+          "score": 0.0301513671875
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 33,
+          "score": 0.359375
+        },
+        {
+          "task": "mm_text",
+          "rank": 20,
+          "score": 0.287109375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 30,
+          "score": 0.359375
+        }
+      ],
+      "20-17": [
+        {
+          "task": "mm_image_mc",
+          "rank": 51,
+          "score": 0.0296630859375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 19,
+          "score": 0.427734375
+        },
+        {
+          "task": "mm_text",
+          "rank": 57,
+          "score": 0.173828125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 53,
+          "score": 0.310546875
+        }
+      ],
+      "13-28": [
+        {
+          "task": "mm_image_mc",
+          "rank": 52,
+          "score": 0.029541015625
+        }
+      ],
+      "23-11": [
+        {
+          "task": "mm_image_mc",
+          "rank": 53,
+          "score": 0.028564453125
+        }
+      ],
+      "8-26": [
+        {
+          "task": "mm_image_mc",
+          "rank": 54,
+          "score": 0.0277099609375
+        }
+      ],
+      "25-11": [
+        {
+          "task": "mm_image_mc",
+          "rank": 55,
+          "score": 0.02734375
+        }
+      ],
+      "29-12": [
+        {
+          "task": "mm_image_mc",
+          "rank": 56,
+          "score": 0.027099609375
+        },
+        {
+          "task": "mm_image_yn",
+          "rank": 44,
+          "score": 0.32421875
+        }
+      ],
+      "19-25": [
+        {
+          "task": "mm_image_mc",
+          "rank": 57,
+          "score": 0.0269775390625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 52,
+          "score": 0.3125
+        }
+      ],
+      "9-16": [
+        {
+          "task": "mm_image_mc",
+          "rank": 58,
+          "score": 0.0267333984375
+        }
+      ],
+      "7-7": [
+        {
+          "task": "mm_image_yn",
+          "rank": 12,
+          "score": 0.48828125
+        },
+        {
+          "task": "mm_text",
+          "rank": 47,
+          "score": 0.1982421875
+        }
+      ],
+      "13-13": [
+        {
+          "task": "mm_image_yn",
+          "rank": 13,
+          "score": 0.4765625
+        },
+        {
+          "task": "mm_text",
+          "rank": 9,
+          "score": 0.34375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 25,
+          "score": 0.37890625
+        }
+      ],
+      "20-16": [
+        {
+          "task": "mm_image_yn",
+          "rank": 22,
+          "score": 0.40625
+        },
+        {
+          "task": "mm_text",
+          "rank": 50,
+          "score": 0.189453125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 35,
+          "score": 0.345703125
+        }
+      ],
+      "22-23": [
+        {
+          "task": "mm_image_yn",
+          "rank": 25,
+          "score": 0.390625
+        },
+        {
+          "task": "mm_text",
+          "rank": 54,
+          "score": 0.1787109375
+        }
+      ],
+      "21-23": [
+        {
+          "task": "mm_image_yn",
+          "rank": 28,
+          "score": 0.3671875
+        },
+        {
+          "task": "mm_text",
+          "rank": 13,
+          "score": 0.31640625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 24,
+          "score": 0.380859375
+        }
+      ],
+      "34-28": [
+        {
+          "task": "mm_image_yn",
+          "rank": 30,
+          "score": 0.365234375
+        }
+      ],
+      "20-23": [
+        {
+          "task": "mm_image_yn",
+          "rank": 31,
+          "score": 0.36328125
+        },
+        {
+          "task": "mm_text",
+          "rank": 14,
+          "score": 0.314453125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 23,
+          "score": 0.380859375
+        }
+      ],
+      "21-22": [
+        {
+          "task": "mm_image_yn",
+          "rank": 34,
+          "score": 0.359375
+        },
+        {
+          "task": "mm_text",
+          "rank": 11,
+          "score": 0.3359375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 47,
+          "score": 0.32421875
+        }
+      ],
+      "17-17": [
+        {
+          "task": "mm_image_yn",
+          "rank": 37,
+          "score": 0.3515625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 32,
+          "score": 0.35546875
+        }
+      ],
+      "11-9": [
+        {
+          "task": "mm_image_yn",
+          "rank": 38,
+          "score": 0.341796875
+        }
+      ],
+      "20-21": [
+        {
+          "task": "mm_image_yn",
+          "rank": 39,
+          "score": 0.33203125
+        },
+        {
+          "task": "mm_text",
+          "rank": 6,
+          "score": 0.38671875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 27,
+          "score": 0.37109375
+        }
+      ],
+      "33-28": [
+        {
+          "task": "mm_image_yn",
+          "rank": 40,
+          "score": 0.33203125
+        }
+      ],
+      "24-22": [
+        {
+          "task": "mm_image_yn",
+          "rank": 41,
+          "score": 0.330078125
+        }
+      ],
+      "16-23": [
+        {
+          "task": "mm_image_yn",
+          "rank": 43,
+          "score": 0.32421875
+        },
+        {
+          "task": "mm_text",
+          "rank": 45,
+          "score": 0.203125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 36,
+          "score": 0.34375
+        }
+      ],
+      "20-31": [
+        {
+          "task": "mm_image_yn",
+          "rank": 45,
+          "score": 0.322265625
+        }
+      ],
+      "2-28": [
+        {
+          "task": "mm_image_yn",
+          "rank": 46,
+          "score": 0.3203125
+        }
+      ],
+      "14-12": [
+        {
+          "task": "mm_image_yn",
+          "rank": 49,
+          "score": 0.3125
+        },
+        {
+          "task": "mm_text",
+          "rank": 23,
+          "score": 0.265625
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 48,
+          "score": 0.322265625
+        }
+      ],
+      "20-29": [
+        {
+          "task": "mm_image_yn",
+          "rank": 50,
+          "score": 0.3125
+        }
+      ],
+      "20-8": [
+        {
+          "task": "mm_image_yn",
+          "rank": 52,
+          "score": 0.310546875
+        }
+      ],
+      "29-6": [
+        {
+          "task": "mm_image_yn",
+          "rank": 55,
+          "score": 0.298828125
+        }
+      ],
+      "19-12": [
+        {
+          "task": "mm_image_yn",
+          "rank": 56,
+          "score": 0.294921875
+        }
+      ],
+      "16-22": [
+        {
+          "task": "mm_image_yn",
+          "rank": 57,
+          "score": 0.29296875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 58,
+          "score": 0.2890625
+        }
+      ],
+      "13-14": [
+        {
+          "task": "mm_text",
+          "rank": 10,
+          "score": 0.34375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 31,
+          "score": 0.35546875
+        }
+      ],
+      "13-15": [
+        {
+          "task": "mm_text",
+          "rank": 21,
+          "score": 0.279296875
+        }
+      ],
+      "23-4": [
+        {
+          "task": "mm_text",
+          "rank": 22,
+          "score": 0.27734375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 28,
+          "score": 0.37109375
+        }
+      ],
+      "9-29": [
+        {
+          "task": "mm_text",
+          "rank": 26,
+          "score": 0.255859375
+        }
+      ],
+      "12-30": [
+        {
+          "task": "mm_text",
+          "rank": 27,
+          "score": 0.255859375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 17,
+          "score": 0.40234375
+        }
+      ],
+      "26-15": [
+        {
+          "task": "mm_text",
+          "rank": 28,
+          "score": 0.255859375
+        }
+      ],
+      "9-10": [
+        {
+          "task": "mm_text",
+          "rank": 32,
+          "score": 0.2421875
+        }
+      ],
+      "21-26": [
+        {
+          "task": "mm_text",
+          "rank": 33,
+          "score": 0.2421875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 37,
+          "score": 0.34375
+        }
+      ],
+      "7-23": [
+        {
+          "task": "mm_text",
+          "rank": 34,
+          "score": 0.2392578125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 38,
+          "score": 0.333984375
+        }
+      ],
+      "23-5": [
+        {
+          "task": "mm_text",
+          "rank": 41,
+          "score": 0.2236328125
+        }
+      ],
+      "24-8": [
+        {
+          "task": "mm_text",
+          "rank": 42,
+          "score": 0.2236328125
+        }
+      ],
+      "28-2": [
+        {
+          "task": "mm_text",
+          "rank": 43,
+          "score": 0.2080078125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 41,
+          "score": 0.333984375
+        }
+      ],
+      "28-0": [
+        {
+          "task": "mm_text",
+          "rank": 44,
+          "score": 0.20703125
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 49,
+          "score": 0.3203125
+        }
+      ],
+      "24-7": [
+        {
+          "task": "mm_text",
+          "rank": 49,
+          "score": 0.1904296875
+        }
+      ],
+      "23-28": [
+        {
+          "task": "mm_text",
+          "rank": 51,
+          "score": 0.1875
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 51,
+          "score": 0.318359375
+        }
+      ],
+      "16-21": [
+        {
+          "task": "mm_text",
+          "rank": 53,
+          "score": 0.181640625
+        }
+      ],
+      "27-18": [
+        {
+          "task": "mm_text",
+          "rank": 55,
+          "score": 0.1767578125
+        }
+      ],
+      "7-22": [
+        {
+          "task": "mm_text",
+          "rank": 56,
+          "score": 0.173828125
+        }
+      ],
+      "18-5": [
+        {
+          "task": "mm_text",
+          "rank": 58,
+          "score": 0.1708984375
+        },
+        {
+          "task": "text_needle_image",
+          "rank": 50,
+          "score": 0.318359375
+        }
+      ],
+      "15-15": [
+        {
+          "task": "text_needle_image",
+          "rank": 10,
+          "score": 0.447265625
+        }
+      ],
+      "21-31": [
+        {
+          "task": "text_needle_image",
+          "rank": 54,
+          "score": 0.30859375
+        }
+      ],
+      "17-15": [
+        {
+          "task": "text_needle_image",
+          "rank": 55,
+          "score": 0.302734375
+        }
+      ],
+      "19-14": [
+        {
+          "task": "text_needle_image",
+          "rank": 56,
+          "score": 0.296875
+        }
+      ],
+      "17-16": [
+        {
+          "task": "text_needle_image",
+          "rank": 57,
+          "score": 0.29296875
+        }
+      ]
+    }
+  }
+}

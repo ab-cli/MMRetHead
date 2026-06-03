@@ -1,0 +1,485 @@
+{
+  "created_at_utc": "2026-06-02T21:54:24.529549+00:00",
+  "retrievers": [
+    {
+      "file": "gemma_3_12b_it_128k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-12b-it",
+      "model_slug": "gemma_3_12b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "128K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 100,
+      "recommended_head_top_k": 100
+    },
+    {
+      "file": "gemma_3_12b_it_16k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-12b-it",
+      "model_slug": "gemma_3_12b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "16K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 73,
+      "recommended_head_top_k": 73
+    },
+    {
+      "file": "gemma_3_12b_it_32k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-12b-it",
+      "model_slug": "gemma_3_12b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "32K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 84,
+      "recommended_head_top_k": 84
+    },
+    {
+      "file": "gemma_3_12b_it_64k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-12b-it",
+      "model_slug": "gemma_3_12b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "64K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 95,
+      "recommended_head_top_k": 95
+    },
+    {
+      "file": "gemma_3_12b_it_8k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-12b-it",
+      "model_slug": "gemma_3_12b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "8K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 71,
+      "recommended_head_top_k": 71
+    },
+    {
+      "file": "gemma_3_27b_it_128k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-27b-it",
+      "model_slug": "gemma_3_27b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "128K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 251,
+      "recommended_head_top_k": 251
+    },
+    {
+      "file": "gemma_3_27b_it_16k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-27b-it",
+      "model_slug": "gemma_3_27b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "16K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 187,
+      "recommended_head_top_k": 187
+    },
+    {
+      "file": "gemma_3_27b_it_32k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-27b-it",
+      "model_slug": "gemma_3_27b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "32K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 206,
+      "recommended_head_top_k": 206
+    },
+    {
+      "file": "gemma_3_27b_it_64k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-27b-it",
+      "model_slug": "gemma_3_27b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "64K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 232,
+      "recommended_head_top_k": 232
+    },
+    {
+      "file": "gemma_3_27b_it_8k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "google/gemma-3-27b-it",
+      "model_slug": "gemma_3_27b_it",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "8K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 170,
+      "recommended_head_top_k": 170
+    },
+    {
+      "file": "qwen2_5_vl_32b_instruct_128k_no_yarn_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "model_slug": "qwen2_5_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "128K_no_yarn",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 246,
+      "recommended_head_top_k": 246
+    },
+    {
+      "file": "qwen2_5_vl_32b_instruct_16k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "model_slug": "qwen2_5_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "16K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 226,
+      "recommended_head_top_k": 226
+    },
+    {
+      "file": "qwen2_5_vl_32b_instruct_32k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "model_slug": "qwen2_5_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "32K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 214,
+      "recommended_head_top_k": 214
+    },
+    {
+      "file": "qwen2_5_vl_32b_instruct_64k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "model_slug": "qwen2_5_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "64K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 223,
+      "recommended_head_top_k": 223
+    },
+    {
+      "file": "qwen2_5_vl_32b_instruct_8k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "model_slug": "qwen2_5_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "8K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 236,
+      "recommended_head_top_k": 236
+    },
+    {
+      "file": "qwen2_5_vl_7b_instruct_128k_no_yarn_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "model_slug": "qwen2_5_vl_7b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "128K_no_yarn",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 99,
+      "recommended_head_top_k": 99
+    },
+    {
+      "file": "qwen2_5_vl_7b_instruct_16k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "model_slug": "qwen2_5_vl_7b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "16K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 77,
+      "recommended_head_top_k": 77
+    },
+    {
+      "file": "qwen2_5_vl_7b_instruct_32k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "model_slug": "qwen2_5_vl_7b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "32K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 80,
+      "recommended_head_top_k": 80
+    },
+    {
+      "file": "qwen2_5_vl_7b_instruct_64k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "model_slug": "qwen2_5_vl_7b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "64K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 97,
+      "recommended_head_top_k": 97
+    },
+    {
+      "file": "qwen2_5_vl_7b_instruct_8k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "model_slug": "qwen2_5_vl_7b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "8K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 77,
+      "recommended_head_top_k": 77
+    },
+    {
+      "file": "qwen3_vl_32b_instruct_128k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-32B-Instruct",
+      "model_slug": "qwen3_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "128K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 324,
+      "recommended_head_top_k": 324
+    },
+    {
+      "file": "qwen3_vl_32b_instruct_16k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-32B-Instruct",
+      "model_slug": "qwen3_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "16K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 361,
+      "recommended_head_top_k": 361
+    },
+    {
+      "file": "qwen3_vl_32b_instruct_32k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-32B-Instruct",
+      "model_slug": "qwen3_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "32K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 347,
+      "recommended_head_top_k": 347
+    },
+    {
+      "file": "qwen3_vl_32b_instruct_64k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-32B-Instruct",
+      "model_slug": "qwen3_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "64K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 332,
+      "recommended_head_top_k": 332
+    },
+    {
+      "file": "qwen3_vl_32b_instruct_8k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-32B-Instruct",
+      "model_slug": "qwen3_vl_32b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "8K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 388,
+      "recommended_head_top_k": 388
+    },
+    {
+      "file": "qwen3_vl_8b_instruct_128k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_slug": "qwen3_vl_8b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "128K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 112,
+      "recommended_head_top_k": 112
+    },
+    {
+      "file": "qwen3_vl_8b_instruct_16k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_slug": "qwen3_vl_8b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "16K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 104,
+      "recommended_head_top_k": 104
+    },
+    {
+      "file": "qwen3_vl_8b_instruct_32k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_slug": "qwen3_vl_8b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "32K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 95,
+      "recommended_head_top_k": 95
+    },
+    {
+      "file": "qwen3_vl_8b_instruct_64k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_slug": "qwen3_vl_8b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "64K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 95,
+      "recommended_head_top_k": 95
+    },
+    {
+      "file": "qwen3_vl_8b_instruct_8k_four_tasks_top5pct_union_detection_head_score.json",
+      "model": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_slug": "qwen3_vl_8b_instruct",
+      "source_experiment": "experiments/active/detection",
+      "source_results_root": "results/detection",
+      "source_context": "8K",
+      "tasks": [
+        "mm_image_mc",
+        "mm_image_yn",
+        "mm_text",
+        "text_needle_image"
+      ],
+      "head_count": 106,
+      "recommended_head_top_k": 106
+    }
+  ]
+}

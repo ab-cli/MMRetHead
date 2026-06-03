@@ -1,0 +1,165 @@
+{
+  "created_at_utc": "2026-06-02T21:58:18.034569+00:00",
+  "configs": [
+    {
+      "file": "mm_niah_image_identical_k128.yaml",
+      "dataset": "identical_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K128_dep6.jsonl",
+      "input_max_length": 131072,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_identical_k16.yaml",
+      "dataset": "identical_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K16_dep6.jsonl",
+      "input_max_length": 16384,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_identical_k32.yaml",
+      "dataset": "identical_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K32_dep6.jsonl",
+      "input_max_length": 32768,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_identical_k64.yaml",
+      "dataset": "identical_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K64_dep6.jsonl",
+      "input_max_length": 65536,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_identical_k8.yaml",
+      "dataset": "identical_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K8_dep6.jsonl",
+      "input_max_length": 8192,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_k128.yaml",
+      "dataset": "mm_niah_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K128_dep6.jsonl",
+      "input_max_length": 131072,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_k16.yaml",
+      "dataset": "mm_niah_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K16_dep6.jsonl",
+      "input_max_length": 16384,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_k32.yaml",
+      "dataset": "mm_niah_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K32_dep6.jsonl",
+      "input_max_length": 32768,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_k64.yaml",
+      "dataset": "mm_niah_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K64_dep6.jsonl",
+      "input_max_length": 65536,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_image_k8.yaml",
+      "dataset": "mm_niah_retrieval-image",
+      "test_file": "NIAH/retrieval-image_test_K8_dep6.jsonl",
+      "input_max_length": 8192,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_k128.yaml",
+      "dataset": "mm_niah_retrieval-text",
+      "test_file": "NIAH/retrieval-text_test_K128_dep6.jsonl",
+      "input_max_length": 131072,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_k16.yaml",
+      "dataset": "mm_niah_retrieval-text",
+      "test_file": "NIAH/retrieval-text_test_K16_dep6.jsonl",
+      "input_max_length": 16384,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_k32.yaml",
+      "dataset": "mm_niah_retrieval-text",
+      "test_file": "NIAH/retrieval-text_test_K32_dep6.jsonl",
+      "input_max_length": 32768,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_k64.yaml",
+      "dataset": "mm_niah_retrieval-text",
+      "test_file": "NIAH/retrieval-text_test_K64_dep6.jsonl",
+      "input_max_length": 65536,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_k8.yaml",
+      "dataset": "mm_niah_retrieval-text",
+      "test_file": "NIAH/retrieval-text_test_K8_dep6.jsonl",
+      "input_max_length": 8192,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_needle_image_k128.yaml",
+      "dataset": "text_needle_image",
+      "test_file": "NIAH/retrieval-text_test_K128_dep6.jsonl",
+      "input_max_length": 131072,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_needle_image_k16.yaml",
+      "dataset": "text_needle_image",
+      "test_file": "NIAH/retrieval-text_test_K16_dep6.jsonl",
+      "input_max_length": 16384,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_needle_image_k32.yaml",
+      "dataset": "text_needle_image",
+      "test_file": "NIAH/retrieval-text_test_K32_dep6.jsonl",
+      "input_max_length": 32768,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_needle_image_k64.yaml",
+      "dataset": "text_needle_image",
+      "test_file": "NIAH/retrieval-text_test_K64_dep6.jsonl",
+      "input_max_length": 65536,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    },
+    {
+      "file": "mm_niah_text_needle_image_k8.yaml",
+      "dataset": "text_needle_image",
+      "test_file": "NIAH/retrieval-text_test_K8_dep6.jsonl",
+      "input_max_length": 8192,
+      "max_test_samples": 20,
+      "generation_max_length": 128
+    }
+  ]
+}
