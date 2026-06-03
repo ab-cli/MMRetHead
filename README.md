@@ -396,7 +396,7 @@ filenames do not collide. The original output layout is preserved under
 
 ## MMDocIR Retrieval
 
-MMRetHead provides single-GPU page-level and layout-level MMDocIR runners. The default retriever is attention-based; `--scorer text_baseline` is available for dependency-light data and metric smoke tests.
+MMRetHead provides page-level and layout-level MMDocIR runners. The default retriever is attention-based; `--scorer text_baseline` is available for dependency-light data and metric smoke tests.
 
 Required data:
 
